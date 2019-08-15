@@ -5,6 +5,7 @@
 ;       last modification : 12-Aug-1997
 ;
 ;  Copyright (c) 1997 Andreas Dietrich
+;  Modified for 8bitworkshop by @sehugg
 ; ********************************************************************
                 
                 PROCESSOR 6502
@@ -13,7 +14,7 @@
 ;       Global Definitions
 ; --------------------------------------------------------------------        
                 
-                INCLUDE VCS.H
+                INCLUDE "vcs.h"
 
 MemBase         = $00
 
@@ -490,7 +491,7 @@ PosObj:         SUBROUTINE
 ;       Sound Subroutines
 ; --------------------------------------------------------------------        
                 
-                INCLUDE NPlayer.asm
+                INCLUDE "nplayer.asm"
                 
 ; ********************************************************************
 ; --------------------------------------------------------------------        
@@ -544,7 +545,7 @@ MessageText:    BYTE    D-LetterFont+7
 
                 ALIGN $0100
                 
-                INCLUDE FONT.ASM
+                INCLUDE "font.asm"
 
 ; --------------------------------------------------------------------        
 ;       CPU Vectors
